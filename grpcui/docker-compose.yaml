@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  grpcui:
+    image: fullstorydev/grpcui
+    ports:
+      - "8080:8080"
+    command:
+      - -plaintext
+      - 172.16.99.251:9000
